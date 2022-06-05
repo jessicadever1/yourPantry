@@ -3,7 +3,7 @@ import { GiMeal } from 'react-icons/gi'
 import { BsFillCalendar2DayFill } from 'react-icons/bs'
 import { AiOutlineShoppingCart }from 'react-icons/ai'
 import { RiDoorOpenLine } from 'react-icons/ri'
-import './access.css'
+import './navigation.css'
 
 const Footer = () => {
 
@@ -11,22 +11,22 @@ const Footer = () => {
     {
       "name": 'Recipes',
       "icon": <GiMeal color='#023E8A' className='navIcon' />,
-      "link": ''
+      "link": '/recipes'
     },
     {
       "name": 'Pantry',
       "icon": <RiDoorOpenLine color='#023E8A' className='navIcon' />,
-      "link": ''
+      "link": '/pantry'
     },
     {
       "name": 'Meals',
       "icon": <BsFillCalendar2DayFill color='#023E8A' className='navIcon' />,
-      "link": ''
+      "link": '/mealPlans'
     },
     {
       "name": 'Shop',
       "icon": <AiOutlineShoppingCart color='#023E8A' className='navIcon' />,
-      "link": ''
+      "link": '/shop'
     },
   ]
 
