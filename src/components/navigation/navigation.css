@@ -4,3 +4,16 @@
   flex-direction: column;
   align-items: center;
 }
+
+#footerItem {
+  background-color: none;
+  border: none;
+}
+
+.selected {
+  color: #023E8A
+}
+
+.unselected {
+  color: lightgray;
+}

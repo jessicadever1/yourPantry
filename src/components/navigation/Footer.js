@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { GiMeal } from 'react-icons/gi'
 import { BsFillCalendar2DayFill } from 'react-icons/bs'
 import { AiOutlineShoppingCart }from 'react-icons/ai'
 import { RiDoorOpenLine } from 'react-icons/ri'
 import './navigation.css'
+import { NavItem } from 'react-bootstrap'
 
 const Footer = () => {
+  const [selected, setSelected] = useState('Recipes')
 
+  console.log(selected)
   const navMenuTabs = [
     {
       "name": 'Recipes',
@@ -34,12 +37,12 @@ const Footer = () => {
     <>
       {navMenuTabs.map((option, index) => {
         return (
-          <div key={index} className=''>
-            <div className='grid25'>
+          <div key={index} className={option.name !== selected ? 'unselected' : 'selected'}>
+            <NavItem className='grid25' onClick={() => {setSelected(option.name)}}>
               <a href={option.link}>{option.icon}</a>
               <div>{option.name}</div>
-            </div>
-        </div>
+            </NavItem>
+          </div>
         )
       })}
     </>
