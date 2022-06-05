@@ -32,14 +32,14 @@ const Footer = () => {
 
   return (
     <>
-      {navMenuTabs.map((option) => {
+      {navMenuTabs.map((option, index) => {
         return (
-          <section className='row text topPad1 botPad1'>
+          <div key={index} className=''>
             <div className='grid25'>
-              <Link href={option.link}>{option.icon}</Link>
+              <a href={option.link}>{option.icon}</a>
               <div>{option.name}</div>
             </div>
-        </section>
+        </div>
         )
       })}
     </>

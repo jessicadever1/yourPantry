@@ -35,7 +35,7 @@ export default function Login() {
                     </FormGroup>
                     <em className="pt">
                         <div className="jcc">Are you new here? Let's get you</div>
-                        <Link to="register" className="">Registered!</Link>
+                        <Link to="/register" className="">Registered!</Link>
                     </em>
                 </fieldset>
             </Form>
