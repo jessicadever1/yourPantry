@@ -12,5 +12,18 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
-  margin-left: .5rem;
+  margin-left: 2.5rem;
+}
+
+.mobileHeaderMenu {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #023E8A;
+  height: 4rem;
+  width: 110%;
+  justify-content: flex-end;
 }

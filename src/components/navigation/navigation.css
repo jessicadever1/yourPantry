@@ -17,3 +17,25 @@
 .unselected {
   color: lightgray;
 }
+
+.accountIcon {
+  display: flex;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.headerBar {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  
+}
+
+header {
+  position: absolute;
+  left: 1rem;
+  font-size: 2.5rem;
+}

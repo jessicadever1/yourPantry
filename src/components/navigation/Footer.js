@@ -7,38 +7,38 @@ import './navigation.css'
 import { NavItem } from 'react-bootstrap'
 
 const Footer = () => {
-  const [selected, setSelected] = useState('Recipes')
-
-  console.log(selected)
+  
   const navMenuTabs = [
     {
       "name": 'Recipes',
-      "icon": <GiMeal color='#023E8A' className='navIcon' />,
+      "icon": <GiMeal color='#023E8A' className='navIcon' size='2x' />,
       "link": '/recipes'
     },
     {
       "name": 'Pantry',
-      "icon": <RiDoorOpenLine color='#023E8A' className='navIcon' />,
+      "icon": <RiDoorOpenLine color='#023E8A' className='navIcon' size='2x' />,
       "link": '/pantry'
     },
     {
       "name": 'Meals',
-      "icon": <BsFillCalendar2DayFill color='#023E8A' className='navIcon' />,
+      "icon": <BsFillCalendar2DayFill color='#023E8A' className='navIcon' size='2x' />,
       "link": '/mealPlans'
     },
     {
       "name": 'Shop',
-      "icon": <AiOutlineShoppingCart color='#023E8A' className='navIcon' />,
+      "icon": <AiOutlineShoppingCart color='#023E8A' className='navIcon' size='2x' />,
       "link": '/shop'
     },
   ]
+
+  
 
   return (
     <>
       {navMenuTabs.map((option, index) => {
         return (
-          <div key={index} className={option.name !== selected ? 'unselected' : 'selected'}>
-            <NavItem className='grid25' onClick={() => {setSelected(option.name)}}>
+          <div key={index} className={''}>
+            <NavItem className='grid25' onClick={() => {}}>
               <a href={option.link}>{option.icon}</a>
               <div>{option.name}</div>
             </NavItem>

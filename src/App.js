@@ -8,7 +8,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <div className='mobileHeaderMenu'>
+        <Header />
+      </div>
+      
       <ApplicationView />
       <div className='mobileFooterMenu'>
         <Footer />
