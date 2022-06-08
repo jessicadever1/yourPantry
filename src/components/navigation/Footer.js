@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { GiMeal } from 'react-icons/gi'
 import { BsFillCalendar2DayFill } from 'react-icons/bs'
 import { AiOutlineShoppingCart }from 'react-icons/ai'
@@ -12,7 +12,7 @@ const Footer = () => {
     {
       "name": 'Recipes',
       "icon": <GiMeal color='#023E8A' className='navIcon' size='2x' />,
-      "link": '/recipes'
+      "link": '/myRecipes'
     },
     {
       "name": 'Pantry',

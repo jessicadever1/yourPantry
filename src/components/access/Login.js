@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import { useNavigation, Link } from "react-router-dom";
-import { UserProfileContext } from "../providers/UserProfileProvider";
+import { useNavigate, Link } from "react-router-dom";
+import { UserProfileContext } from "../../api/userProviders/UserProfileProvider";
 import "./Access.css";
 
-export default function Login() {
-    const navigation = useNavigation();
+const Login = () => {
+    const navigation = useNavigate();
     const { login } = useContext(UserProfileContext);
 
     const [email, setEmail] = useState();
@@ -42,3 +42,5 @@ export default function Login() {
         </>
     );
 }
+
+export default Login;

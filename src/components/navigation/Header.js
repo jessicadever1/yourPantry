@@ -1,12 +1,12 @@
 import React from 'react';
 import { VscAccount } from 'react-icons/vsc'
 
-const Header = () => {
-
+const Header = (props) => {
+  console.log(props)
   return (
     <>
       <div className='headerBar'>
-        <header>myRecipe</header>
+        <header>{props.name}</header>
         <VscAccount color='white' className='accountIcon' size='2x' />
       </div>
     </>
