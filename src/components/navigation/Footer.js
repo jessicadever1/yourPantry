@@ -17,17 +17,17 @@ const Footer = () => {
     {
       "name": 'Pantry',
       "icon": <RiDoorOpenLine color='#023E8A' className='navIcon' size='2x' />,
-      "link": '/pantry'
+      "link": '/myPantry'
     },
     {
       "name": 'Meals',
       "icon": <BsFillCalendar2DayFill color='#023E8A' className='navIcon' size='2x' />,
-      "link": '/mealPlans'
+      "link": '/myMealPlans'
     },
     {
       "name": 'Shop',
       "icon": <AiOutlineShoppingCart color='#023E8A' className='navIcon' size='2x' />,
-      "link": '/shop'
+      "link": '/myShop'
     },
   ]
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { VscAccount } from 'react-icons/vsc'
 
 const Header = (props) => {
-  console.log(props)
+  
   return (
     <>
       <div className='headerBar'>

@@ -1,13 +1,17 @@
 import React, {useState} from 'react'
 import { Routes, Route } from 'react-router-dom';
-import MyRecipes from './recipes/MyRecipes';
-import Login from './access/Login';
-import Header from '../components/navigation/Header'
+
 import Footer from '../components/navigation/Footer'
+import Header from '../components/navigation/Header'
+import MyMealPlans from './mealPlans/MyMealPlans';
+import MyPantry from './pantry/MyPantry'
+import MyRecipes from './recipes/MyRecipes';
+import MyShop from './shop/MyShop';
+import Login from './access/Login';
 
 const ApplicationView = () => {
   const [isLoggedIn] = useState(true)
-  const [header, setHeader] = useState('myRecipes')
+  const [header, setHeader] = useState('')
   console.log(header)
   
   return (
@@ -18,7 +22,10 @@ const ApplicationView = () => {
             <Header name={header} />
           </div>
           <Routes>
-            <Route exact path='myRecipes' element={<MyRecipes />}></Route>
+            <Route exact path='myRecipes' element={<MyRecipes onClick={() => {setHeader('myRecipes')}} />}></Route>
+            <Route exact path='myPantry' element={<MyPantry onClick={() => {setHeader('myPantry')}} />}></Route>
+            <Route exact path='myMealPlans' element={<MyMealPlans onClick={() => {setHeader('myMealPlans')}} />}></Route>
+            <Route exact path='myShop' element={<MyShop onClick={() => {setHeader('myShop')}} />}></Route>
           </Routes>
           <div className='mobileFooterMenu'>
             <Footer />
