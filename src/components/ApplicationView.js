@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { Routes, Route } from 'react-router-dom';
 
 import Footer from '../components/navigation/Footer'
-import Header from '../components/navigation/Header'
 import MyMealPlans from './mealPlans/MyMealPlans';
 import MyPantry from './pantry/MyPantry'
 import MyRecipes from './recipes/MyRecipes';
@@ -11,21 +10,16 @@ import Login from './access/Login';
 
 const ApplicationView = () => {
   const [isLoggedIn] = useState(true)
-  const [header, setHeader] = useState('')
-  console.log(header)
-  
+
   return (
     <>
       {isLoggedIn ? (
         <div>
-          <div className='mobileHeaderMenu'>
-            <Header name={header} />
-          </div>
           <Routes>
-            <Route exact path='myRecipes' element={<MyRecipes onClick={() => {setHeader('myRecipes')}} />}></Route>
-            <Route exact path='myPantry' element={<MyPantry onClick={() => {setHeader('myPantry')}} />}></Route>
-            <Route exact path='myMealPlans' element={<MyMealPlans onClick={() => {setHeader('myMealPlans')}} />}></Route>
-            <Route exact path='myShop' element={<MyShop onClick={() => {setHeader('myShop')}} />}></Route>
+            <Route exact path='myRecipes' element={<MyRecipes />}></Route>
+            <Route exact path='myPantry' element={<MyPantry />}></Route>
+            <Route exact path='myMealPlans' element={<MyMealPlans />}></Route>
+            <Route exact path='myShop' element={<MyShop />}></Route>
           </Routes>
           <div className='mobileFooterMenu'>
             <Footer />

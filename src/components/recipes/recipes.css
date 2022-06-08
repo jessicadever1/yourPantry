@@ -1,0 +1,15 @@
+
+  .recipeCard {
+    margin-top: 4rem;
+    display: flex;
+  }
+
+  button {
+    background-color: none;
+    border: none;
+  }
+  
+  .expand:active {
+    transform: rotate(180deg); 
+  }
+
